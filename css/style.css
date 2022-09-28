@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body{
+body {
     background-image: url('../img/fondo000.jpg');
     text-align: center;
     display: flex;
@@ -21,10 +21,11 @@ header {
 }
 
 .logoRavetta {
-    width: 150px;
-    height: 150px;
+    width: 9em;
+    height: 9em;
 }
-.info{
+
+.info {
     margin: 1em;
 }
 
@@ -32,8 +33,8 @@ header {
 h2 {
     font-family: 'Ubuntu', sans-serif;
     background-image: url('../img/fondo0000.jpg');
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 /* HISTORIA */
@@ -44,8 +45,8 @@ h3 {
 
 .productosPortada {
     border: 3px solid black;
-    width: 290px;
-    height: 290px;
+    width: 12em;
+    height: 12em;
 }
 
 .logos {
@@ -58,8 +59,8 @@ h3 {
     background-image: url('../img/fondo000.jpg');
     border: 2px solid black;
     margin-top: -5px;
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: 9em;
+    margin-right: 9em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,46 +87,47 @@ footer {
 }
 */
 /* GRIDS */
-header{
+header {
     grid-area: header;
 }
-.gridNosotros{
+
+.gridNosotros {
     grid-area: nosotros;
 }
 
-.gridOfertas{
+.gridOfertas {
     grid-area: ofertas;
 }
 
-.gridNovedades{
+.gridNovedades {
     grid-area: novedades;
 }
 
-.gridPagos{
+.gridPagos {
     grid-area: pagos;
 }
 
-footer{
+footer {
     grid-area: footer;
 }
 
-.envoltura{
+.envoltura {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "nosotros"
-    "ofertas"
-    "novedades"
-    "pagos"
-    "footer";
+    grid-template-areas:
+        "header"
+        "nosotros"
+        "ofertas"
+        "novedades"
+        "pagos"
+        "footer";
 }
 
-.padre{
+.padre {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 2.5em;
-    margin: 2.5em;
+    margin: 1.5em;
 }
 
 
@@ -143,13 +145,9 @@ footer{
 }
 */
 
-@media (min-width:768px){
-    .padre{
-        display: grid;
+@media (min-width:768px) {
+    .padre {
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        gap: 2.5em;
-        margin: 2.5em;
     }
 
     .productosPortada:hover {
@@ -164,18 +162,19 @@ footer{
         transition-duration: 0.2s;
     }
 
-    .logoRavetta:hover{
+    .logoRavetta:hover {
         transform: scale(1.1);
         transition-property: all;
         transition-duration: 0.2s;
     }
 
-    .navegador:hover{
+    .navegador:hover {
         transform: scale(1.1);
         transition-property: all;
         transition-duration: 0.2s;
     }
-/*  
+
+    /*  
     .contact{
         display: flex;
         flex-direction: row;
@@ -189,16 +188,12 @@ footer{
 }
 
 
-@media(min-width:1024px){
-    .padre{
-        display: grid;
+@media(min-width:1024px) {
+    .padre {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        gap: 2.5em;
-        margin: 2.5em;
     }
 
-/*  
+    /*  
     .contact{
         display: flex;
         flex-direction: row;
@@ -215,4 +210,3 @@ footer{
     }
     */
 }
-
