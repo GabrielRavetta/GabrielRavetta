@@ -13,11 +13,12 @@ body {
 }
 
 header {
-    background-image: url('../img/fondo00000.jpg');
+    background-image: url('../img/fondo000.jpg');
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: large;
+    border-bottom: 2px solid black;
 }
 
 .logoRavetta {
@@ -37,7 +38,7 @@ h2 {
     padding-bottom: 1em;
 }
 
-/* HISTORIA */
+/* HISTORIA/CONTACTO/UBICACION */
 h3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: xx-large;
@@ -54,12 +55,14 @@ h3 {
     height: 10em;
 }
 
+/* MODELAMOS LA CAJA CONTENEDORA DE LAS REDES SOCIALES */
 .redes {
     background-image: url('../img/fondo000.jpg');
     border: 2px solid black;
-    margin-top: -5px;
-    margin-left: 9em;
-    margin-right: 9em;
+    margin-top: -0.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -101,7 +104,7 @@ footer {
     grid-area: footer;
 }
 
-.envoltura {
+.contenedor {
     display: grid;
     grid-template-areas:
         "header"
@@ -112,7 +115,7 @@ footer {
         "footer";
 }
 
-.padre {
+.productos {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -121,26 +124,13 @@ footer {
     margin: 1.5em;
 }
 
-.contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5em;
-    margin: 8em;
-
-}
-
-.formCampos{
-    margin-right: 10em;
-}
-.send{
-    margin-left: 20em;
-}
 
 @media (min-width:768px) {
-    .padre {
+    .productos {
         grid-template-columns: 1fr 1fr;
     }
+
+    /* TRANSFORMACIONES */
 
     .productosPortada:hover {
         transform: scale(1.1);
@@ -166,39 +156,12 @@ footer {
         transition-duration: 0.2s;
     }
 
-    /*  
-    .contact{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 100px;
-        margin: 100px;
-    
-    }
-    */
-
 }
 
 
 @media(min-width:1024px) {
-    .padre {
+    .productos {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    /*  
-    .contact{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 100px;
-        margin: 100px;
-    
-    }
-    .formCampos{
-        margin-right: 270px;
-    }
-    .send{
-        margin-left: 410px;
-    }
-    */
 }
