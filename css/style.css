@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../img/fondo000.jpg');
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+
+header {
+    background-image: url('../img/fondo00000.jpg');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.logoRavetta {
+    width: 150px;
+    height: 150px;
+}
+.info{
+    margin: 1em;
+}
+
+/* OFERTAS/NOSOTROS/PAGOS/REDES */
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('../img/fondo0000.jpg');
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* HISTORIA */
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+}
+
+.productosPortada {
+    border: 3px solid black;
+    width: 290px;
+    height: 290px;
+}
+
+.logos {
+    width: 320px;
+    height: 160px;
+
+}
+
+.redes {
+    background-image: url('../img/fondo000.jpg');
+    border: 2px solid black;
+    margin-top: -5px;
+    margin-left: 130px;
+    margin-right: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logosRedes {
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('../img/fondo0000.jpg');
+}
+
+/*  
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    margin: 100px;
+
+}
+*/
+/* GRIDS */
+header{
+    grid-area: header;
+}
+.gridNosotros{
+    grid-area: nosotros;
+}
+
+.gridOfertas{
+    grid-area: ofertas;
+}
+
+.gridNovedades{
+    grid-area: novedades;
+}
+
+.gridPagos{
+    grid-area: pagos;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.envoltura{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nosotros"
+    "ofertas"
+    "novedades"
+    "pagos"
+    "footer";
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2.5em;
+    margin: 2.5em;
+}
+
+
+/*
+.contact{
+    gap: 100px;
+    margin: 50px;
+
+}
+.formCampos{
+    margin-right: 270px;
+}
+.send{
+    margin-left: 410px;
+}
+*/
+
+@media (min-width:768px){
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 2.5em;
+        margin: 2.5em;
+    }
+
+    .productosPortada:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 0.2s;
+    }
+
+    .logosRedes:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 0.2s;
+    }
+
+    .logoRavetta:hover{
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 0.2s;
+    }
+
+    .navegador:hover{
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 0.2s;
+    }
+/*  
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+        margin: 100px;
+    
+    }
+    */
+
+}
+
+
+@media(min-width:1024px){
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 2.5em;
+        margin: 2.5em;
+    }
+
+/*  
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+        margin: 100px;
+    
+    }
+    .formCampos{
+        margin-right: 270px;
+    }
+    .send{
+        margin-left: 410px;
+    }
+    */
+}
+
