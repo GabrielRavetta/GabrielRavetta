@@ -45,14 +45,13 @@ h3 {
 
 .productosPortada {
     border: 3px solid black;
-    width: 12em;
-    height: 12em;
+    width: 20em;
+    height: 20em;
 }
 
 .logos {
     width: 20em;
     height: 10em;
-
 }
 
 .redes {
@@ -76,16 +75,7 @@ footer {
     background-image: url('../img/fondo0000.jpg');
 }
 
-/*  
-.contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 100px;
-    margin: 100px;
 
-}
-*/
 /* GRIDS */
 header {
     grid-area: header;
@@ -125,25 +115,27 @@ footer {
 .padre {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     justify-items: center;
     gap: 2.5em;
     margin: 1.5em;
 }
 
-
-/*
 .contact{
-    gap: 100px;
-    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5em;
+    margin: 8em;
 
 }
+
 .formCampos{
-    margin-right: 270px;
+    margin-right: 10em;
 }
 .send{
-    margin-left: 410px;
+    margin-left: 20em;
 }
-*/
 
 @media (min-width:768px) {
     .padre {
