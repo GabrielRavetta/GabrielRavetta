@@ -21,6 +21,16 @@ header {
     border-bottom: 2px solid black;
 }
 
+
+.navbar .container-fluid {
+    justify-content: flex-end;
+}
+
+.navbar {
+    margin-top: 2.3em;
+    align-items: baseline;
+}
+
 .logoRavetta {
     width: 9em;
     height: 9em;
