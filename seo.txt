@@ -12,3 +12,5 @@ muebles: muebles, hogar, mesas, sillas, placard
 juguetes: juguetes, futbol, niños, muñecas, bijou
 electrodomesticos: electrodomesticos, tv, audio, cocina, heladeras
 contacto: contacto, redes, mapa, telefono, ubicacion
+
+3- Se disminuyeron resoluciones de imagenes para optimizar los tiempos de carga
