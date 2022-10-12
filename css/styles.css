@@ -26,6 +26,10 @@ h1 {
   font-size: xx-large;
 }
 
+.portada {
+  width: 100%;
+}
+
 /* DEFINIMOS EL ESTILO DE TODOS LOS PRODUCTOS*/
 .productosPortada {
   border: 2px solid black;
