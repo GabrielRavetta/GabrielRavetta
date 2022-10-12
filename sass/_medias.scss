@@ -7,11 +7,30 @@
     margin: 1.5em;
 }
 
+@media (min-width:500px) {
+    .logoRavetta {
+        @include size($sizeRavetta*1.5, $sizeRavetta*1.5);
+    }
+
+    .navbar {
+        margin-top: 1.8em;
+    }
+}
+
 
 @media (min-width:768px) {
     .productos {
         grid-template-columns: 1fr 1fr;
     }
+
+    .navbar {
+        margin-top: 2.7em;
+    }
+
+    .logoRavetta {
+        @include size($sizeRavetta*2, $sizeRavetta*2);
+    }
+
 
     /* TRANSFORMACIONES */
 

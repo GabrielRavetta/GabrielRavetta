@@ -10,8 +10,9 @@ header {
 /* APLICAMOS NESTING*/
 
 .navbar {
-    margin-top: 2.3em;
+    margin-top: 0.7em;
     align-items: baseline;
+
     .container-fluid {
         justify-content: flex-end;
     }
@@ -19,4 +20,9 @@ header {
 
 .logoRavetta {
     @include size($sizeRavetta, $sizeRavetta);
+}
+
+.navbar-nav .nav-link {
+    display: flex;
+    justify-content: flex-end;
 }

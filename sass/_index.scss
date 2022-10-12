@@ -1,4 +1,3 @@
-
 /* INFORMACION DEL LOCAL */
 .info {
     margin: 1em;
@@ -12,5 +11,5 @@ h3 {
 /* DEFINIMOS EL TAMAÑO DE LAS IMAGENES DE FORMAS DE PAGO*/
 /*USAMOS MIXIN, CON VARIABLES GLOBALES Y OPERACIONES COMO PARAMETROS*/
 .logos {
-    @include size ($sizePortada,$sizePortada/2);
+    @include size ($sizePortada, $sizePortada/2);
 }

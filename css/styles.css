@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("../img/fondo000.jpg");
+  background-image: url("../img/fondo000.webp");
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -17,9 +17,9 @@ body {
 
 /* OFERTAS/NOSOTROS/PAGOS/REDES/ETC */
 h2, h1 {
-  background-image: url("../img/fondo0000.jpg");
-  padding-top: 1em;
-  padding-bottom: 1em;
+  background-image: url("../img/fondo0000.webp");
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
 }
 
 h1 {
@@ -38,7 +38,7 @@ h1 {
 }
 
 header {
-  background-image: url("../img/fondo000.jpg");
+  background-image: url("../img/fondo000.webp");
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -48,7 +48,7 @@ header {
 
 /* APLICAMOS NESTING*/
 .navbar {
-  margin-top: 2.3em;
+  margin-top: 0.7em;
   align-items: baseline;
 }
 .navbar .container-fluid {
@@ -56,8 +56,13 @@ header {
 }
 
 .logoRavetta {
-  width: 9em;
-  height: 9em;
+  width: 5em;
+  height: 5em;
+}
+
+.navbar-nav .nav-link {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* INFORMACION DEL LOCAL */
@@ -79,7 +84,7 @@ h3 {
 
 /* MODELAMOS LA CAJA CONTENEDORA DE LAS REDES SOCIALES */
 .redes {
-  background-image: url("../img/fondo000.jpg");
+  background-image: url("../img/fondo000.webp");
   border: 2px solid black;
   margin-top: -0.5em;
   margin-bottom: 1em;
@@ -97,7 +102,7 @@ h3 {
 }
 
 footer {
-  background-image: url("../img/fondo0000.jpg");
+  background-image: url("../img/fondo0000.webp");
 }
 
 /* APLICAMOS NESTING */
@@ -160,9 +165,25 @@ footer {
   margin: 1.5em;
 }
 
+@media (min-width: 500px) {
+  .logoRavetta {
+    width: 7.5em;
+    height: 7.5em;
+  }
+  .navbar {
+    margin-top: 1.8em;
+  }
+}
 @media (min-width: 768px) {
   .productos {
     grid-template-columns: 1fr 1fr;
+  }
+  .navbar {
+    margin-top: 2.7em;
+  }
+  .logoRavetta {
+    width: 10em;
+    height: 10em;
   }
   /* TRANSFORMACIONES */
   .productosPortada:hover {
