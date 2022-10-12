@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/fondo000.jpg");
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* OFERTAS/NOSOTROS/PAGOS/REDES/ETC */
+h2, h1 {
+  background-image: url("../img/fondo0000.jpg");
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+/* DEFINIMOS EL ESTILO DE TODOS LOS PRODUCTOS*/
+.productosPortada {
+  border: 2px solid black;
+  width: 20em;
+  height: 20em;
+}
+
+header {
+  background-image: url("../img/fondo000.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: large;
+  border-bottom: 2px solid black;
+}
+
+/* APLICAMOS NESTING*/
+.navbar {
+  margin-top: 2.3em;
+  align-items: baseline;
+}
+.navbar .container-fluid {
+  justify-content: flex-end;
+}
+
+.logoRavetta {
+  width: 9em;
+  height: 9em;
+}
+
+/* INFORMACION DEL LOCAL */
+.info {
+  margin: 1em;
+}
+
+/* HISTORIA/CONTACTO/UBICACION */
+h3 {
+  font-size: xx-large;
+}
+
+/* DEFINIMOS EL TAMAÑO DE LAS IMAGENES DE FORMAS DE PAGO*/
+/*USAMOS MIXIN, CON VARIABLES GLOBALES Y OPERACIONES COMO PARAMETROS*/
+.logos {
+  width: 20em;
+  height: 10em;
+}
+
+/* MODELAMOS LA CAJA CONTENEDORA DE LAS REDES SOCIALES */
+.redes {
+  background-image: url("../img/fondo000.jpg");
+  border: 2px solid black;
+  margin-top: -0.5em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Aplicamos Mixing y utilizamos variables globales*/
+.logosRedes {
+  width: 60px;
+  height: 60px;
+}
+
+footer {
+  background-image: url("../img/fondo0000.jpg");
+}
+
+/* APLICAMOS NESTING */
+/* UTILIZAMOS MIXIN Y EXTEND */
+.contact {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.contact .map {
+  width: 75%;
+}
+.contact form {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.contact form input, .contact form textarea {
+  width: 50%;
+}
+.contact form .send {
+  width: 25%;
+}
+
+/* DEFINIMOS LAS AREAS CON GRIDS */
+header {
+  grid-area: header;
+}
+
+.gridNosotros {
+  grid-area: nosotros;
+}
+
+.gridOfertas {
+  grid-area: ofertas;
+}
+
+.gridNovedades {
+  grid-area: novedades;
+}
+
+.gridPagos {
+  grid-area: pagos;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* MAQUETAMOS LA ESTUCTURA DE LA WEB */
+.contenedor {
+  display: grid;
+  grid-template-areas: "header" "nosotros" "ofertas" "novedades" "pagos" "footer";
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 2.5em;
+  margin: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .productos {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* TRANSFORMACIONES */
+  .productosPortada:hover {
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.2s;
+  }
+  .logosRedes:hover {
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.2s;
+  }
+  .logoRavetta:hover {
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.2s;
+  }
+  .navegador:hover {
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.2s;
+  }
+}
+@media (min-width: 1024px) {
+  .productos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=styles.css.map */

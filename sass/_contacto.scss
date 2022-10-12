@@ -1,0 +1,21 @@
+/* APLICAMOS NESTING */
+/* UTILIZAMOS MIXIN Y EXTEND */
+
+.contact {
+    @include margins (2em, 2em);
+    .map {
+        width: $porcentaje+($porcentaje/2);
+    }
+    form {
+        @include margins (3em, 3em);
+        input {
+            width: $porcentaje;
+        }
+        textarea {
+            @extend input;
+        }
+        .send {
+            width: $porcentaje/2;
+        }
+    }
+}

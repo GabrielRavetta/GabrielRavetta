@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: $fondoRedes;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* OFERTAS/NOSOTROS/PAGOS/REDES/ETC */
+h2 {
+    background-image: $fondoFooter;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h1 {
+    @extend h2;
+    font-size: xx-large;
+}
+
+/* DEFINIMOS EL ESTILO DE TODOS LOS PRODUCTOS*/
+.productosPortada {
+    border: 2px solid $bordes;
+    @include size($sizePortada, $sizePortada);
+}

@@ -1,0 +1,22 @@
+header {
+    background-image: $fondoRedes;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: large;
+    border-bottom: 2px solid $bordes;
+}
+
+/* APLICAMOS NESTING*/
+
+.navbar {
+    margin-top: 2.3em;
+    align-items: baseline;
+    .container-fluid {
+        justify-content: flex-end;
+    }
+}
+
+.logoRavetta {
+    @include size($sizeRavetta, $sizeRavetta);
+}
