@@ -10,9 +10,8 @@ header {
 /* APLICAMOS NESTING*/
 
 .navbar {
-    margin-top: 0.7em;
+    margin-top: 2.3em;
     align-items: baseline;
-
     .container-fluid {
         justify-content: flex-end;
     }
@@ -22,7 +21,10 @@ header {
     @include size($sizeRavetta, $sizeRavetta);
 }
 
-.navbar-nav .nav-link {
-    display: flex;
-    justify-content: flex-end;
+.navbar-nav {
+    align-items: center;
+    .nav-link {
+        align-items: center;
+        padding-left: 0;
+    }
 }

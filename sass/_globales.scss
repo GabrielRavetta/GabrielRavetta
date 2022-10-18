@@ -16,8 +16,8 @@ body {
 /* OFERTAS/NOSOTROS/PAGOS/REDES/ETC */
 h2 {
     background-image: $fondoFooter;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
 }
 
 h1 {
@@ -25,12 +25,20 @@ h1 {
     font-size: xx-large;
 }
 
-.portada {
+.portada{
     width: 100%;
 }
 
 /* DEFINIMOS EL ESTILO DE TODOS LOS PRODUCTOS*/
 .productosPortada {
-    border: 2px solid $bordes;
+    
     @include size($sizePortada, $sizePortada);
+}
+
+.box1{
+    border: 2px solid $bordes;
+    background-image: $fondoProductos;
+}
+.precio{
+    font-size: 1.5em;
 }
