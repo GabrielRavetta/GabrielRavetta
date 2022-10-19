@@ -3,19 +3,43 @@
 
 .contact {
     @include margins (2em, 2em);
+
     .map {
         width: $porcentaje+($porcentaje/2);
     }
-    form {
-        @include margins (3em, 3em);
-        input {
-            width: $porcentaje;
+
+    .envForm {
+        color: white;
+        padding: 1em;
+        margin-left: 20%;
+        width: $porcentaje2+($porcentaje2/2);
+    }
+
+    .formulario {
+        text-transform: uppercase;
+        background-image: $fondoRedes;
+        text-align: left;
+        border: 2px solid white;
+
+        .formCampos {
+            margin: 0;
+            padding: 1em;
         }
+
+        button,
+        input,
         textarea {
-            @extend input;
+            width: 100%;
+            padding: .7em;
+            border: none;
+            border-bottom: 1px solid black;
         }
-        .send {
-            width: $porcentaje/2;
+
+        button {
+            color: white;
+            background-image: $fondoFooter;
+            text-transform: uppercase;
+            padding: 1em;
         }
     }
 }

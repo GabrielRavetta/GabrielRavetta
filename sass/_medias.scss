@@ -46,5 +46,11 @@
     .productos {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
+    .logoRavetta {
+        @include size($sizeRavetta*1.5, $sizeRavetta*1.5);
+    }
+    .navbar {
+        margin-top: 2.5em;
+    }
+    
 }

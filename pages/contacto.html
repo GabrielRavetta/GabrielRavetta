@@ -9,16 +9,17 @@
     <meta name="keywords" content="contacto, redes, mapa, telefono, ubicacion">
     <meta name="description" content="Por este medio podes encontrarnos por nuestros distintos canales de comunicacion">
     <link rel="shortcut icon" href="../img/favicon.ico">
-    <title>Contacto</title>
     <!-- Link para utilizar boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Contacto</title>
 </head>
 
 <body>
     <header class="sticky-top">
-        <a href="../index.html"><img class="img-fluid logoRavetta" src="../img/logo.webp" alt="logo"></a>
+        <a href="../index.html"><img class="img-fluid logoRavetta" src="../img/logo.webp" alt="logoRavetta"></a>
         <!-- Se utilizo navbar de bootstrap -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
@@ -44,39 +45,63 @@
     <main>
         <h1>CONTACTO</h1>
         <div class="contact">
-            <iframe class="map"
+            <iframe data-aos="fade-up" class="map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1677.692014202358!2d-64.337566!3d-32.7555432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d275809fe3d0b9%3A0xc6f45733c81fca25!2sRavetta%20Hogar!5e0!3m2!1ses!2sar!4v1662401990421!5m2!1ses!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <form>
-                <div class="formCampos">
-                    <input type="text" placeholder="Nombre y Apellido" required><br><br>
-                    <input type="number" placeholder="Numero de contacto" required><br><br>
-                    <input type="email" placeholder="Email" required><br><br>
+            <div class="envForm" data-aos="fade-up">
+                <div class="formulario">
+                    <form>
+                        <p class="formCampos">
+                            <label>Nombre y Apellido:</label>
+                            <input type="text" name="nombre">
+                        </p>
+                        <p class="formCampos">
+                            <label>Email:</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p class="formCampos">
+                            <label>Teléfono</label>
+                            <input type="tel" name="telefono">
+                        </p>
+                        <p class="formCampos">
+                            <label>Su consulta:</label>
+                            <textarea name="consulta" rows="3"></textarea>
+                        </p>
+                        <p class="formCampos">
+                            <button>
+                                Enviar
+                            </button>
+                        </p>
+                    </form>
                 </div>
-                <textarea cols="60" rows="10" placeholder="Escriba aquí su consulta"></textarea><br><br>
-                <input class="send" type="submit" value="Enviar">
-            </form>
-        </div>
+            </div>
     </main>
-    <footer>
+    <footer data-aos="fade-up">
         <h1>NUESTRAS REDES</h1>
         <div class="redes">
             <a href="https://www.facebook.com/Ravetta-Hogar-185051475299422"><img class="img-fluid logosRedes"
-                    src="../img/facebook.svg" alt="facebook"></a>
+                    src="../img/facebook.svg" alt="facebookLogo"></a>
             <a href="https://www.instagram.com/ravettahogar/"><img class="img-fluid logosRedes"
-                    src="../img/instagram.svg" alt="instagram"></a>
+                    src="../img/instagram.svg" alt="instagramLogo"></a>
             <a href="mailto:aravettamax@hotmail.com"><img class="img-fluid logosRedes" src="../img/email.svg"
-                    alt="email"></a>
+                    alt="emailLogo"></a>
             <a href="https://walink.co/5084c5"><img class="img-fluid logosRedes" src="../img/whatsapp.svg"
-                    alt="whatsapp"></a>
+                    alt="whatsappLogo"></a>
         </div>
-        <p>Sitio creado por Gabriel Andres Ravetta <br> Todos los derechos reservados</p>
+        <p>Sitio creado por Gabriel Andres Ravetta</p>
+        <p>Todos los derechos reservados</p>
     </footer>
     <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- Script de Java -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script de AOS -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
