@@ -59,20 +59,20 @@ header {
 /* APLICAMOS NESTING*/
 .navbar {
   margin-top: 1.1em;
-  align-items: baseline;
-}
-.navbar .container-fluid {
-  justify-content: flex-end;
-}
-
-.logoRavetta {
-  width: 6em;
-  height: 6em;
 }
 
 .nav-link {
   display: flex;
   justify-content: flex-end;
+}
+
+.formu {
+  padding: 1em;
+}
+
+.logoRavetta {
+  width: 6em;
+  height: 6em;
 }
 
 /* INFORMACION DEL LOCAL */
@@ -127,8 +127,8 @@ footer {
 .contact .envForm {
   color: white;
   padding: 1em;
-  margin-left: 20%;
-  width: 60%;
+  margin-left: 12.5%;
+  width: 75%;
 }
 .contact .formulario {
   text-transform: uppercase;
@@ -198,6 +198,10 @@ footer {
 @media (min-width: 768px) {
   .productos {
     grid-template-columns: 1fr 1fr;
+  }
+  .envForm {
+    margin-left: 20%;
+    width: 60%;
   }
   /* TRANSFORMACIONES */
   .productosPortada:hover {
