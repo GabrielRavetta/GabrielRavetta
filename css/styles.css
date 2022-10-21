@@ -25,7 +25,7 @@ h2, h1 {
 }
 
 h1 {
-  font-size: xx-large;
+  font-size: large;
 }
 
 .portada {
@@ -49,13 +49,13 @@ h1 {
 }
 
 header {
-  background: rgb(15, 12, 75);
-  background: linear-gradient(0deg, rgb(15, 12, 75) 25%, rgb(17, 27, 89) 50%, rgb(15, 12, 75) 75%);
+  background: rgb(6, 5, 31);
+  background: linear-gradient(90deg, rgb(6, 5, 31) 0%, rgb(13, 15, 70) 53%, rgb(6, 5, 31) 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: large;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid rgb(251, 58, 0);
   text-transform: uppercase;
 }
 
@@ -224,6 +224,9 @@ footer {
 @media (min-width: 768px) {
   .productos {
     grid-template-columns: 1fr 1fr;
+  }
+  h1 {
+    font-size: xx-large;
   }
   .contact .map {
     width: 60%;
