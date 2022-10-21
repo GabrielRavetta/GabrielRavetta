@@ -4,7 +4,8 @@
 }
 
 body {
-    background-image: $fondoRedes;
+    background: $fondoBody1;
+    background: $fondoBody2;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@ body {
 
 /* OFERTAS/NOSOTROS/PAGOS/REDES/ETC */
 h2 {
-    background-image: $fondoFooter;
+    @include backgrounds ($fondoFooter1,$fondoFooter2);
     padding-top: 0.4em;
     padding-bottom: 0.4em;
 }

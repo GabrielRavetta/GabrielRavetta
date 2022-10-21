@@ -7,3 +7,8 @@
     margin-top: $mTop;
     margin-bottom: $mBottom;
 }
+
+@mixin backgrounds($f1 , $f2) {
+    background: $f1;
+    background: $f2;
+}

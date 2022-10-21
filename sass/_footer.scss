@@ -1,6 +1,6 @@
 /* MODELAMOS LA CAJA CONTENEDORA DE LAS REDES SOCIALES */
 .redes {
-    background-image: $fondoRedes;
+    @include backgrounds ($fondoBody1,$fondoBody2);
     border: 2px solid $bordes;
     @include margins (-0.5em, 1em);
     margin-left: 2em;
@@ -16,5 +16,5 @@
 }
 
 footer {
-    background-image: $fondoFooter
+    @include backgrounds ($fondoFooter1,$fondoFooter2);
 }

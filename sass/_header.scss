@@ -1,29 +1,38 @@
 header {
-    background-image: $fondoRedes;
+    @include backgrounds ($fondoHeader1,$fondoHeader2);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: large;
-    border-bottom: 2px solid $bordes;
+    border-bottom: 2px solid orange;
     text-transform: uppercase;
 }
 
 /* APLICAMOS NESTING*/
 
 .navbar {
-    margin-top: 1.1em;
+    margin-top: 0.7em;
+    align-items: baseline;
+    .container-fluid {
+        justify-content: flex-end;
+    }
 }
 
-.nav-link {
-    display: flex;
-    justify-content: flex-end;
+.btn-outline-success{
+    color: rgb(240, 231, 231);
+    border-color: gray;
 }
 
-.formu{
-    padding: 1em;
+.btn-outline-success:hover{
+    background:rgb(4, 47, 110);
+    border-color: white;
 }
 
 .logoRavetta {
     @include size($sizeRavetta, $sizeRavetta);
 }
 
+.navbar-nav .nav-link {
+    display: flex;
+    justify-content: flex-end;
+}

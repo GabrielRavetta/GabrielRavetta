@@ -1,23 +1,23 @@
 /* APLICAMOS NESTING */
-/* UTILIZAMOS MIXIN Y EXTEND */
+/* UTILIZAMOS MIXIN */
 
 .contact {
     @include margins (2em, 2em);
 
     .map {
-        width: $porcentaje+($porcentaje/2);
+        width: $porcentaje;
     }
 
     .envForm {
         color: white;
         padding: 1em;
-        margin-left: 20%;
-        width: $porcentaje2+($porcentaje2/2);
+        width: $porcentaje2;
+        margin-top: 2em;
     }
 
     .formulario {
         text-transform: uppercase;
-        background-image: $fondoRedes;
+        @include backgrounds ($fondoBody1,$fondoBody2);
         text-align: left;
         border: 2px solid white;
 
@@ -37,7 +37,7 @@
 
         button {
             color: white;
-            background-image: $fondoFooter;
+            @include backgrounds ($fondoFooter1,$fondoFooter2);
             text-transform: uppercase;
             padding: 1em;
         }
