@@ -4,7 +4,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     font-size: large;
-    border-bottom: 2px solid rgb(251, 58, 0);
+    border-bottom: 2px solid $bordes;
     text-transform: uppercase;
 }
 
@@ -18,16 +18,20 @@ header {
     }
 }
 
-.btn-outline-success{
+.btn-outline-primary{
     color: rgb(240, 231, 231);
     border-color: gray;
 }
 
-.btn-outline-success:hover{
+.btn-outline-primary:hover{
     background:rgb(4, 47, 110);
     border-color: white;
 }
+.btn-outline-primary:active{
+    background:rgb(4, 47, 110);
+    border-color: white;
 
+}
 .logoRavetta {
     @include size($sizeRavetta, $sizeRavetta);
 }
